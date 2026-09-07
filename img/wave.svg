@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" preserveAspectRatio="none">
+  <path d="M0,15 Q50,0 100,15 Q150,30 200,15 Q250,0 300,15 Q350,30 400,15 Q450,0 500,15 Q550,30 600,15 Q650,0 700,15 Q750,30 800,15 Q850,0 900,15 Q950,30 1000,15 Q1050,0 1100,15 Q1150,30 1200,15 L1200,60 L0,60 Z" fill="currentColor"/>
+</svg>

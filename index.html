@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Приглашение на свадьбу — Александр &amp; Антонина (10.10.2026)</title>
+  <meta name="description" content="Жених и Невеста приглашают вас на свадьбу. 10 октября 2026, Ростов-на-Дону">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Marck+Script&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="start-screen" id="startScreen" role="dialog" aria-label="Открытие приглашения">
+    <video class="start-video" src="video/ss-video.mp4" poster="img/ss-poster.png" autoplay muted loop playsinline preload="auto"></video>
+    <div class="start-content">
+      <button class="start-open" id="openInvite" type="button">Открыть приглашение</button>
+      <p class="start-text">Мы решили пожениться и приглашаем на свадьбу</p>
+    </div>
+  </div>
+
+  <audio id="bgMusic" src="audio/music.mp3" loop preload="auto"></audio>
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Включить музыку">
+    <span class="music-note">&#9834;</span>
+  </button>
+
+  <nav class="nav">
+    <button class="nav-toggle" id="navToggle" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#mymain">Главная</a></li>
+      <li><a href="#myinv">Приглашение</a></li>
+      <li><a href="#place">Место</a></li>
+      <li><a href="#menu-sec">Меню</a></li>
+      <li><a href="#timetable">Расписание</a></li>
+      <li><a href="#opros">Опрос</a></li>
+      <li><a href="#map">Как добраться</a></li>
+      <li><a href="#rsvp">Подтвердить</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="mymain">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Дорогие гости!</p>
+      <h1 class="hero-names">Александр <span class="amp">&amp;</span> Антонина</h1>
+      <p class="hero-invite">Приглашают на свадьбу</p>
+      <div class="hero-date">
+        <span class="d">10</span>
+        <span class="m">октября</span>
+        <span class="y">2026</span>
+      </div>
+      <p class="hero-weekday">суббота &middot; Ростов-на-Дону</p>
+
+      <div class="countdown" id="countdown" aria-label="До нашей свадьбы осталось">
+        <div class="count-item"><span class="count-num" id="cdWeeks">0</span><span class="count-label">недель</span></div>
+        <div class="count-item"><span class="count-num" id="cdDays">0</span><span class="count-label">дней</span></div>
+        <div class="count-item"><span class="count-num" id="cdHours">0</span><span class="count-label">часов</span></div>
+        <div class="count-item"><span class="count-num" id="cdMinutes">0</span><span class="count-label">минут</span></div>
+        <div class="count-item"><span class="count-num" id="cdSeconds">0</span><span class="count-label">секунд</span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wave-sep" style="--from:#fbf7ec; --to:#ffffff" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,15 Q50,0 100,15 Q150,30 200,15 Q250,0 300,15 Q350,30 400,15 Q450,0 500,15 Q550,30 600,15 Q650,0 700,15 Q750,30 800,15 Q850,0 900,15 Q950,30 1000,15 Q1050,0 1100,15 Q1150,30 1200,15 L1200,60 L0,60 Z"/></svg></div>
+
+  <div class="divider" aria-hidden="true"><div class="divider-track"><img src="img/ribbon.png" alt=""></div></div>
+
+  <section class="letter" id="myinv" data-reveal>
+    <h2 class="section-title">Дорогой Гость!</h2>
+    <p>Любовь объединяет сердца, а самые счастливые моменты становятся еще ценнее, когда рядом близкие люди.</p>
+    <p>Мы будем счастливы, если именно вы разделите с нами день, который станет началом нашей семейной истории.</p>
+    <p>Пусть этот праздник будет наполнен радостью, улыбками, искренними пожеланиями и теплом ваших сердец.</p>
+  </section>
+
+  <div class="divider" data-dir="-1" aria-hidden="true"><div class="divider-track"><img src="img/ribbon.png" alt=""></div></div>
+
+  <div class="wave-sep" style="--from:#fbf7ec; --to:#ffffff" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,15 Q50,0 100,15 Q150,30 200,15 Q250,0 300,15 Q350,30 400,15 Q450,0 500,15 Q550,30 600,15 Q650,0 700,15 Q750,30 800,15 Q850,0 900,15 Q950,30 1000,15 Q1050,0 1100,15 Q1150,30 1200,15 L1200,60 L0,60 Z"/></svg></div>
+
+  <section class="venue" id="place" data-reveal>
+    <h2 class="section-title" data-reveal>Место проведения торжества</h2>
+    <p class="venue-name" data-reveal>Терраса 180</p>
+    <figure class="venue-photo"><img src="img/venue.jpg" alt="Ресторан Терраса 180"></figure>
+    <p class="venue-address">Ростов-на-Дону, Филимоновская улица, 180/91 &middot; этаж 2</p>
+  </section>
+
+  <div class="wave-sep" style="--from:#ffffff; --to:#fbf7ec" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,15 Q50,0 100,15 Q150,30 200,15 Q250,0 300,15 Q350,30 400,15 Q450,0 500,15 Q550,30 600,15 Q650,0 700,15 Q750,30 800,15 Q850,0 900,15 Q950,30 1000,15 Q1050,0 1100,15 Q1150,30 1200,15 L1200,60 L0,60 Z"/></svg></div>
+
+  <section class="menu" id="menu-sec" data-reveal>
+    <h2 class="section-title">Меню</h2>
+    <div class="menu-inner">
+      <p class="menu-text">Меню разнообразно, поэтому сообщите нам заранее, если у вас есть какие-либо предпочтения или диетические ограничения.</p>
+      <figure class="menu-img"><img src="img/sweets.png" alt=""></figure>
+    </div>
+  </section>
+
+  <div class="wave-sep" style="--from:#fbf7ec; --to:#f2e7b9" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,15 Q50,0 100,15 Q150,30 200,15 Q250,0 300,15 Q350,30 400,15 Q450,0 500,15 Q550,30 600,15 Q650,0 700,15 Q750,30 800,15 Q850,0 900,15 Q950,30 1000,15 Q1050,0 1100,15 Q1150,30 1200,15 L1200,60 L0,60 Z"/></svg></div>
+
+  <section class="rsvp" id="rsvp" data-reveal>
+    <h2 class="section-title">Подтверждение присутствия</h2>
+    <p class="rsvp-note">Пожалуйста, подтвердите свое присутствие до конца сентября</p>
+
+    <div class="calendar">
+      <div class="calendar-head">
+        <span class="cal-month">Октябрь</span>
+        <span class="cal-year">2026</span>
+      </div>
+      <div class="cal-grid cal-weekdays">
+        <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span>
+      </div>
+      <div class="cal-grid">
+        <span class="cal-blank"></span><span class="cal-blank"></span><span class="cal-blank"></span><span class="cal-blank"></span>
+        <span>1</span><span>2</span><span>3</span>
+        <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span class="cal-day-active">10</span>
+        <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span>
+        <span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+        <span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+      </div>
+    </div>
+
+    <div class="rsvp-actions" id="rsvpActions">
+      <button class="rsvp-btn" id="rsvpBtn" type="button"><i class="fa-check">&#10003;</i> Подтвердить</button>
+    </div>
+    <div class="rsvp-done" id="rsvpDone" hidden>
+      <p class="rsvp-thanks">Спасибо, что подтвердили свое присутствие!<br><b>Александр</b> и <b>Антонина</b> уже оповещены об этом ;)</p>
+      <button class="rsvp-cancel" id="rsvpCancel" type="button">Отменить подтверждение</button>
+    </div>
+  </section>
+
+  <section class="timetable" id="timetable" data-reveal>
+    <h2 class="section-title">Свадебное расписание</h2>
+
+    <div class="event" data-reveal>
+      <div class="event-icon"><img src="img/icon19.svg" alt=""></div>
+      <div class="event-time">09:50</div>
+      <div class="event-body">
+        <h3>Торжественная регистрация</h3>
+        <p class="event-place">Ростов-на-Дону, Университетский переулок, 48/2А</p>
+        <p class="event-desc">Наша регистрация пройдет в залах ЗАГСа, приглашаем всех разделить с нами такой торжественный момент</p>
+      </div>
+    </div>
+
+    <div class="event" data-reveal>
+      <div class="event-icon"><img src="img/icon24.svg" alt=""></div>
+      <div class="event-time">10:30</div>
+      <div class="event-body">
+        <h3>Фотосессия</h3>
+        <p class="event-place">Банкетный зал</p>
+        <p class="event-desc">До банкета у вас будет время, чтобы узнать друг друга поближе и пофотографироваться</p>
+      </div>
+    </div>
+
+    <div class="event" data-reveal>
+      <div class="event-icon"><img src="img/icon1.svg" alt=""></div>
+      <div class="event-time">14:00</div>
+      <div class="event-body">
+        <h3>Праздничный банкет</h3>
+        <p class="event-place">Ростов-на-Дону, Филимоновская улица, 180/91 &middot; этаж 2</p>
+        <p class="event-desc">Здесь пройдет наш праздничный банкет</p>
+      </div>
+    </div>
+
+    <div class="event" data-reveal>
+      <div class="event-icon"><img src="img/icon23.svg" alt=""></div>
+      <div class="event-time">22:00</div>
+      <div class="event-body">
+        <h3>Окончание праздничного дня</h3>
+        <p class="event-place">Терраса ресторана</p>
+        <p class="event-desc">Даже такой день может когда-то подойти к концу</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wave-sep" style="--from:#f2e7b9; --to:#ffffff" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,15 Q50,0 100,15 Q150,30 200,15 Q250,0 300,15 Q350,30 400,15 Q450,0 500,15 Q550,30 600,15 Q650,0 700,15 Q750,30 800,15 Q850,0 900,15 Q950,30 1000,15 Q1050,0 1100,15 Q1150,30 1200,15 L1200,60 L0,60 Z"/></svg></div>
+
+  <section class="opros" id="opros" data-reveal>
+    <h2 class="section-title">Опрос</h2>
+
+    <form class="opros-form" id="oprosForm">
+      <div class="q">
+        <p class="q-title">Есть ли у вас особые предпочтения по еде</p>
+        <div class="q-options" role="radiogroup" aria-label="Предпочтения по еде">
+          <label><input type="radio" name="food" value="нет"><span class="q-dot"></span><span class="q-text">нет</span></label>
+          <label><input type="radio" name="food" value="не ем мясо"><span class="q-dot"></span><span class="q-text">не ем мясо</span></label>
+          <label><input type="radio" name="food" value="не ем рыбу"><span class="q-dot"></span><span class="q-text">не ем рыбу</span></label>
+          <label><input type="radio" name="food" value="вегетарианец"><span class="q-dot"></span><span class="q-text">вегетарианец</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <p class="q-title">Какой алкоголь вы предпочитаете?</p>
+        <div class="q-options" role="radiogroup" aria-label="Алкоголь">
+          <label><input type="radio" name="alco" value="красное вино"><span class="q-dot"></span><span class="q-text">Красное вино</span></label>
+          <label><input type="radio" name="alco" value="белое вино"><span class="q-dot"></span><span class="q-text">Белое вино</span></label>
+          <label><input type="radio" name="alco" value="шампанское"><span class="q-dot"></span><span class="q-text">Шампанское</span></label>
+          <label><input type="radio" name="alco" value="виски/коньяк"><span class="q-dot"></span><span class="q-text">Виски/коньяк</span></label>
+          <label><input type="radio" name="alco" value="водка"><span class="q-dot"></span><span class="q-text">Водка</span></label>
+          <label><input type="radio" name="alco" value="не буду пить алкоголь"><span class="q-dot"></span><span class="q-text">Не буду пить алкоголь</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <p class="q-title">Будет ли с вами +1?</p>
+        <div class="q-options" role="radiogroup" aria-label="Плюс один">
+          <label><input type="radio" name="plus" value="нет"><span class="q-dot"></span><span class="q-text">Нет</span></label>
+          <label><input type="radio" name="plus" value="другое"><span class="q-dot"></span><span class="q-text">Другое</span></label>
+        </div>
+      </div>
+
+      <div class="q">
+        <p class="q-title">Будет ли с вами на празднике ребенок?</p>
+        <div class="q-options" role="radiogroup" aria-label="Ребенок">
+          <label><input type="radio" name="child" value="да"><span class="q-dot"></span><span class="q-text">Да</span></label>
+          <label><input type="radio" name="child" value="нет"><span class="q-dot"></span><span class="q-text">Нет</span></label>
+        </div>
+      </div>
+
+      <button class="opros-submit" id="oprosSubmit" type="submit">Отправить</button>
+      <p class="opros-done" id="oprosDone" hidden>Спасибо за ответы! <b>Александр</b> и <b>Антонина</b> учтут ваши пожелания ;)</p>
+    </form>
+  </section>
+
+  <section class="map" id="map" data-reveal>
+    <h2 class="section-title">Как добраться</h2>
+    <p>Точка сбора гостей:</p>
+    <p class="map-address">Ростов-на-Дону, Филимоновская улица, 180/91</p>
+    <p class="map-coords">47.232469, 39.718742</p>
+    <a class="map-link" href="https://yandex.ru/maps/?text=47.232469%2C%2039.718742" target="_blank" rel="noopener">Открыть в Яндекс.Картах</a>
+  </section>
+
+  <div class="wave-sep" style="--from:#ffffff; --to:#fbf7ec" aria-hidden="true"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,15 Q50,0 100,15 Q150,30 200,15 Q250,0 300,15 Q350,30 400,15 Q450,0 500,15 Q550,30 600,15 Q650,0 700,15 Q750,30 800,15 Q850,0 900,15 Q950,30 1000,15 Q1050,0 1100,15 Q1150,30 1200,15 L1200,60 L0,60 Z"/></svg></div>
+
+  <footer class="footer" id="comment" data-reveal>
+    <figure class="footer-rings"><img src="img/rings.png" alt=""></figure>
+    <p class="footer-text">Будем счастливы видеть вас на нашем празднике!</p>
+    <p class="footer-names">Александр &amp; Антонина</p>
+    <p class="footer-date">10.10.2026</p>
+  </footer>
+
+  <div class="modal" id="nameModal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 class="modal-title" id="modalTitle">Как вас зовут?</h3>
+      <p class="modal-sub" id="modalSub"></p>
+      <form id="modalForm">
+        <input class="modal-input" type="text" id="modalName" name="name" placeholder="Ваше имя" required maxlength="80" autocomplete="name">
+        <p class="modal-error" id="modalError" hidden></p>
+        <div class="modal-actions">
+          <button type="button" class="modal-btn modal-btn-ghost" id="modalCancel">Отмена</button>
+          <button type="submit" class="modal-btn" id="modalSend">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script src="js/script.js"></script>
+<noscript><style>.start-screen,.music-btn{display:none!important}body{overflow:auto!important}</style></noscript>
+</body>
+</html>
